@@ -1,8 +1,3 @@
-@import url(./__columns/footer__columns.css);
-@import url(./__column/footer__column.css);
-@import url(./__social/footer__social-icon.css);
-@import url(./__author/footer__author.css);
-
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
