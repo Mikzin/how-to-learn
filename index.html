@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Научиться учиться</title>
     <meta
       name="description"
@@ -14,12 +14,12 @@
     <meta name="author" content="Зинчук Михаил" />
   </head>
 
-  <body>
+  <body class="root">
     <div class="page">
       <header class="header">
         <img
           class="logo logo_place-header"
-          src="images/logo_place_header.svg"
+          src="./images/logo_place_header.svg"
           alt="Логотип Яндекс.Практикум"
         />
         <h1 class="header__title">Научиться учиться</h1>
@@ -30,10 +30,10 @@
         </p>
         <img
           class="header__main-illustration"
-          src="images/header-image.png"
+          src="./images/header-image.png"
           alt="Картина 'Опять двойка'"
         />
-        <div class="header__square-pic"></div>
+        <div class="header__square-pic rotation"></div>
       </header>
 
       <main class="content">
@@ -60,6 +60,129 @@
               </p>
             </div>
           </article>
+        </section>
+
+        <section class="techniques">
+          <h2 class="section-title">Техники обучения</h2>
+          <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+          <ul class="cards">
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-attention.png"
+                alt="Книга"
+              />
+              <h3 class="cards__title">Два вида внимания</h3>
+              <p class="cards__description">
+                Глубокие знания возникают, если чередовать сфокусированное и
+                рассеянное мышление.
+              </p>
+            </li>
+
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-recall.png"
+                alt="Статуя"
+              />
+              <h3 class="cards__title">Recall</h3>
+              <p class="cards__description">
+                Вспоминайте изученное - это позволит соединить разрозненные
+                порции памяти.
+              </p>
+            </li>
+
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-interliving.png"
+                alt="Помещение с людьми"
+              />
+              <h3 class="cards__title">Интерливинг</h3>
+              <p class="cards__description">
+                Изучайте несколько навыков одновременно, они обогащают друг
+                друга.
+              </p>
+            </li>
+
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-question.png"
+                alt="Человек в комнате"
+              />
+              <h3 class="cards__title">Вопросы</h3>
+              <p class="cards__description">
+                Слушая преподавателя, придумывайте хороший вопрос, который вас
+                дейстительно волнует.
+              </p>
+            </li>
+
+            <li class="cards__item">
+              <img
+                class="cards__image"
+                src="./images/cards-competence.png"
+                alt="Книги в руке"
+              />
+              <h3 class="cards__title">Иллюзия компетентности</h3>
+              <p class="cards__description">
+                Повторите про себя, запишите, расскажите другу: вам только
+                кажется, что вы владеете новой темой.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="video">
+          <h2 class="section-title">Видео нa TED</h2>
+          <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+          <div class="video__iframes">
+            <iframe
+              frameborder="0"
+              allowfullscreen
+              class="video__iframe"
+              src="https://www.youtube.com/embed/arj7oStGLkU"
+              width="515px"
+              height="316px"
+            ></iframe>
+            <iframe
+              frameborder="0"
+              allowfullscreen
+              class="video__iframe"
+              src="https://www.youtube.com/embed/5MgBikgcWnY"
+              width="515px"
+              height="316px"
+            ></iframe>
+          </div>
+        </section>
+
+        <section class="oakley">
+          <article class="two-columns">
+            <h2 class="two-columns__brief">История Барбары Оакли.</h2>
+            <div class="two-columns__main-text">
+              <p class="two-columns__paragraph">
+                С детства Барбаре не давалась математика. Она считала себя
+                законченным гуманитарием, причём далеко не самым умным. В армии
+                она изучала русский язык, чтобы получить надбавку, да так
+                успешно, что её выдвинули в командиры. Но для продвижения по
+                службе нужно было сдавать математику. И тогда Барбара придумала
+                свой подход к точным наукам. Оказалось, если вам что-то «плохо
+                даётся», ваши добытые трудом знания гораздо глубже, чем у тех,
+                кому всё ясно с первого взгляда.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="feynman">
+          <h2 class="feynman__title">Метод Фейнмана</h2>
+          <p class="feynman__subtitle">Выучить и не забыть</p>
+          <a class="feynman__link" href="#">Подробнее &rarr;</a>
+          <img
+            class="feynman__photo"
+            src="./images/feynman.png"
+            alt="Фейнман"
+          />
         </section>
 
         <section class="digits">
@@ -118,11 +241,25 @@
           </ul>
         </section>
 
-        <section class="feynman">
-          <h2 class="feynman__title">Метод Фейнмана</h2>
-          <p class="feynman__subtitle">Выучить и не забыть</p>
-          <a class="feynman__link" href="#">Подробнее &rarr;</a>
-          <img class="feynman__photo" src="images/feynman.png" alt="Фейнман" />
+        <section class="khan">
+          <div class="khan__container">
+            <p class="khan__author">Салман Хан</p>
+            <h2 class="khan__title">Весь мир — школа</h2>
+            <p class="khan__quote">
+              Страсть и новаторство Сала Хана меняют процесс обучения миллионов
+              студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
+              всем, кто занимается образованием — так учащиеся повсюду смогут
+              получить навыки и знания, которые приносят успех в школе, карьере
+              и жизни.
+            </p>
+            <p class="khan__quote-author">Джордж Лукас</p>
+            <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+
+            <div class="khan__book-container">
+              <div class="khan__book-pic"></div>
+              <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
+            </div>
+          </div>
         </section>
 
         <section class="kaufman">
@@ -205,10 +342,43 @@
             </li>
           </ul>
           <img
-            class="kaufman__triangle"
+            class="kaufman__triangle rotation"
             src="images/kaufman-triangle.svg"
             alt="Треугольник"
           />
+        </section>
+
+        <section class="resources">
+          <h2 class="section-title">Полезные ресурсы</h2>
+          <p class="section-subtitle">
+            Больше материалов о техниках и лайфхаках обучения
+          </p>
+          <div class="resources__logo-zone">
+            <a class="resources__link" href="#"
+              ><img
+                src="./images/logo/resources-arzamas.svg"
+                class="resources__logo"
+                alt="Логотип Arzamas"
+            /></a>
+            <a class="resources__link" href="#"
+              ><img
+                src="./images/logo/resources-n1.svg"
+                class="resources__logo"
+                alt="Логотип N+1"
+            /></a>
+            <a class="resources__link" href="#"
+              ><img
+                src="./images/logo/resources-strelka.svg"
+                class="resources__logo"
+                alt="Логотип Strelka"
+            /></a>
+            <a class="resources__link" href="#"
+              ><img
+                src="./images/logo/resources-polka.svg"
+                class="resources__logo"
+                alt="Логотип Полка"
+            /></a>
+          </div>
         </section>
       </main>
 
@@ -217,7 +387,7 @@
           <div class="footer__column footer__column_content_copyright">
             <img
               class="logo logo_place-footer"
-              src="images/logo_place_footer.svg"
+              src="./images/logo_place_footer.svg"
               alt="Логотип Яндекс.Практикум"
             />
             <small class="footer__author">&copy; Зинчук Михаил</small>
@@ -241,7 +411,7 @@
                 <a class="footer__column-link" href="#"
                   ><img
                     class="footer__social-icon"
-                    src="images/facebook_color_white.svg"
+                    src="./images/facebook_color_white.svg"
                     alt="логотип Facebook"
                   />Facebook</a
                 >
@@ -250,7 +420,7 @@
                 <a class="footer__column-link" href="#"
                   ><img
                     class="footer__social-icon"
-                    src="images/vk_color_white.svg"
+                    src="./images/vk_color_white.svg"
                     alt="логотип Вконтакте"
                   />Вконтакте</a
                 >
@@ -259,7 +429,7 @@
                 <a class="footer__column-link" href="#"
                   ><img
                     class="footer__social-icon"
-                    src="images/instagram_color_white.svg"
+                    src="./images/instagram_color_white.svg"
                     alt="логотип Instagram"
                   />Instagram</a
                 >
