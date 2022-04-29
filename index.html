@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Научиться учиться</title>
     <meta
@@ -18,7 +17,7 @@
     <div class="page">
       <header class="header">
         <img
-          class="logo logo_place-header"
+          class="logo logo_place_header"
           src="./images/logo_place_header.svg"
           alt="Логотип Яндекс.Практикум"
         />
@@ -26,7 +25,7 @@
         <p class="header__subtitle">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?
-          <a class="header__link" href="#">Узнать &rarr;</a>
+          <a class="header__link" href="#" target="_blank">Узнать &rarr;</a>
         </p>
         <img
           class="header__main-illustration"
@@ -141,15 +140,11 @@
               allowfullscreen
               class="video__iframe"
               src="https://www.youtube.com/embed/arj7oStGLkU"
-              width="515"
-              height="316"
             ></iframe>
             <iframe
               allowfullscreen
               class="video__iframe"
               src="https://www.youtube.com/embed/5MgBikgcWnY"
-              width="515"
-              height="316"
             ></iframe>
           </div>
         </section>
@@ -175,7 +170,7 @@
         <section class="feynman">
           <h2 class="feynman__title">Метод Фейнмана</h2>
           <p class="feynman__subtitle">Выучить и не забыть</p>
-          <a class="feynman__link" href="#">Подробнее &rarr;</a>
+          <a class="feynman__link" href="#" target="_blank">Подробнее &rarr;</a>
           <img
             class="feynman__photo"
             src="./images/feynman.png"
@@ -243,13 +238,13 @@
           <div class="khan__container">
             <p class="khan__author">Салман Хан</p>
             <h2 class="khan__title">Весь мир — школа</h2>
-            <p class="khan__quote">
+            <blockquote class="khan__quote">
               Страсть и новаторство Сала Хана меняют процесс обучения миллионов
               студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
               всем, кто занимается образованием — так учащиеся повсюду смогут
               получить навыки и знания, которые приносят успех в школе, карьере
               и жизни.
-            </p>
+            </blockquote>
             <p class="khan__quote-author">Джордж Лукас</p>
             <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
 
@@ -259,7 +254,9 @@
                 src="./images/khan-book.jpg"
                 alt="Книга Саламана Хана - Весь мир школа"
               />
-              <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
+              <a class="khan__buy-link" href="#" target="_blank"
+                >Купить книгу &rarr;</a
+              >
             </div>
           </div>
         </section>
@@ -343,11 +340,7 @@
               </p>
             </li>
           </ul>
-          <img
-            class="kaufman__triangle rotation"
-            src="./images/kaufman-triangle.svg"
-            alt="Треугольник"
-          />
+          <div class="kaufman__triangle rotation"></div>
         </section>
 
         <section class="resources">
@@ -355,32 +348,40 @@
           <p class="section-subtitle">
             Больше материалов о техниках и лайфхаках обучения
           </p>
-          <div class="resources__logo-zone">
-            <a class="resources__link" href="#"
-              ><img
-                src="./images/logo/resources-arzamas.svg"
-                class="resources__logo"
-                alt="Логотип Arzamas"
-            /></a>
-            <a class="resources__link" href="#"
-              ><img
-                src="./images/logo/resources-n1.svg"
-                class="resources__logo"
-                alt="Логотип N+1"
-            /></a>
-            <a class="resources__link" href="#"
-              ><img
-                src="./images/logo/resources-strelka.svg"
-                class="resources__logo"
-                alt="Логотип Strelka"
-            /></a>
-            <a class="resources__link" href="#"
-              ><img
-                src="./images/logo/resources-polka.svg"
-                class="resources__logo"
-                alt="Логотип Полка"
-            /></a>
-          </div>
+          <ul class="resources__logo-zone">
+            <li>
+              <a class="resources__link" href="#" target="_blank"
+                ><img
+                  src="./images/logo/resources-arzamas.svg"
+                  class="resources__logo"
+                  alt="Логотип Arzamas"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link" href="#" target="_blank"
+                ><img
+                  src="./images/logo/resources-n1.svg"
+                  class="resources__logo"
+                  alt="Логотип N+1"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link" href="#" target="_blank"
+                ><img
+                  src="./images/logo/resources-strelka.svg"
+                  class="resources__logo"
+                  alt="Логотип Strelka"
+              /></a>
+            </li>
+            <li>
+              <a class="resources__link" href="#" target="_blank"
+                ><img
+                  src="./images/logo/resources-polka.svg"
+                  class="resources__logo"
+                  alt="Логотип Полка"
+              /></a>
+            </li>
+          </ul>
         </section>
       </main>
 
@@ -388,7 +389,7 @@
         <div class="footer__columns">
           <div class="footer__column footer__column_content_copyright">
             <img
-              class="logo logo_place-footer"
+              class="logo logo_place_footer"
               src="./images/logo_place_footer.svg"
               alt="Логотип Яндекс.Практикум"
             />
@@ -399,9 +400,21 @@
             <h3 class="footer__column-heading">О Практикуме</h3>
             <nav class="footer__nav">
               <ul class="footer__column-links">
-                <li><a class="footer__column-link" href="#">Главная</a></li>
-                <li><a class="footer__column-link" href="#">Концепция</a></li>
-                <li><a class="footer__column-link" href="#">Наставники</a></li>
+                <li>
+                  <a class="footer__column-link" href="#" target="_blank"
+                    >Главная</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__column-link" href="#" target="_blank"
+                    >Концепция</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__column-link" href="#" target="_blank"
+                    >Наставники</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
@@ -410,7 +423,7 @@
             <h3 class="footer__column-heading">Соцсети</h3>
             <ul class="footer__column-links">
               <li>
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link" href="#" target="_blank"
                   ><img
                     class="footer__social-icon"
                     src="./images/facebook_color_white.svg"
@@ -419,7 +432,7 @@
                 >
               </li>
               <li>
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link" href="#" target="_blank"
                   ><img
                     class="footer__social-icon"
                     src="./images/vk_color_white.svg"
@@ -428,7 +441,7 @@
                 >
               </li>
               <li>
-                <a class="footer__column-link" href="#"
+                <a class="footer__column-link" href="#" target="_blank"
                   ><img
                     class="footer__social-icon"
                     src="./images/instagram_color_white.svg"
